@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  margin: 0 auto;
+  max-width: var(--contentWidth);
+}
+
+.block {
+  margin-top: 4rem;
+}
+
+.tag {
+  padding: 0 .25rem;
+  &.-since {
+    background: #bfbfbf;
+    color: #000000;
+  }
+  &.-ng {
+    background: #dd0031;
+    color: #ffffff;
+  }
+  &.-ua {
+    background: rgb(255, 235, 0);
+    background: linear-gradient(0deg, rgba(255, 235, 0, 1) 0%, rgba(255, 235, 0, 1) 51%, rgb(131, 212, 255) 51%, rgb(131, 212, 255) 100%);
+    color: #000000;
+    text-decoration: none;
+  }
+}

@@ -1,13 +1,25 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { HomePageComponent } from './home-page/home-page.component';
+import { TechTimelinePageComponent } from './tech-timeline-page/tech-timeline-page.component';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: HomePageComponent,
+  },
+  {
+    path: 'tech-timeline',
+    component: TechTimelinePageComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    initialNavigation: 'enabled'
-})],
-  exports: [RouterModule]
+    initialNavigation: 'enabled',
+    scrollPositionRestoration: 'enabled',
+  })],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TechTimelinePageComponent } from './tech-timeline-page/tech-timeline-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TechTimelinePageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

@@ -1,0 +1,38 @@
+.title {
+  //text-align: center;
+}
+
+.timeline-wrapper {
+  overflow-x: auto;
+}
+
+.timeline {
+  margin-top: 4rem;
+  width: 100%;
+  .year {
+    font-weight: 700;
+    text-align: left;
+  }
+  .tech {
+    background: #000000;
+    color: #ffffff;
+    font-size: .8rem;
+    padding: 0 .5rem;
+    transition: all .1s;
+    a {
+      font-weight: 400;
+    }
+  }
+  td, th {
+    min-width: 4rem;
+  }
+  tbody tr {
+    background: var(--background);
+    transition: background .1s;
+    &:hover {
+      background: #e0e0db;
+      .tech {
+      }
+    }
+  }
+}
