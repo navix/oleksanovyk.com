@@ -1,25 +1,11 @@
 @import "~normalize.css/normalize.css";
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Regular.woff2) format('woff2');
-}
-
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 600;
-  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(/assets/JetBrainsMono-Bold.woff2) format('woff2');
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap');
 
 :root {
   //--font: 'IBM Plex Sans', sans-serif;
-  --font: "JetBrains Mono", "Consolas", "Inconsolata", "Monaco", "Courier", monospace;
+  --background: #ffffff;
   --contentWidth: 30rem;
-  --background: #f3f3f1;
+  --font: Inter, "Segoe UI", sans-serif;
 }
 
 html {
@@ -31,8 +17,8 @@ html {
   margin: 0;
   min-height: 100%;
   @media (min-width: 800px) {
-    padding: 1rem;
     font-size: 20px;
+    padding: 1rem;
   }
 }
 
@@ -46,5 +32,5 @@ body {
 
 a {
   color: inherit;
-  font-weight: 700;
+  font-weight: 600;
 }
