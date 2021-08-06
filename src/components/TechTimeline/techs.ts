@@ -143,12 +143,6 @@ export class Techs {
           background: '#111111',
           link: 'https://nextjs.org/',
         },
-        {
-          title: 'Astro',
-          start: 2021,
-          background: '#FF5D01',
-          link: 'https://astro.build/',
-        },
       ],
     },
     {
@@ -225,6 +219,7 @@ export class Techs {
         {
           title: 'GraphQL',
           start: 2018,
+          end: 2020,
           background: '#e10098',
           link: 'https://graphql.org/',
         },

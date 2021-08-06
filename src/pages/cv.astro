@@ -1,0 +1,128 @@
+---
+import MainLayout from '../layout/MainLayout.astro';
+import TechTimeline from '../components/TechTimeline/TechTimeline.astro';
+---
+
+<style lang="scss">
+.block {
+  margin: 3rem 0;
+  &.-final {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.exp-table {
+  td {
+    font-size: 1rem;
+  }
+  td:first-child {
+    font-size: .7rem;
+    color: #666;
+    padding-right: 2rem;
+  }
+  td:last-child {
+    padding: .75rem 0;
+    color: #666;
+    h3 {
+      margin: 0 0 .33rem;
+      color: #000;
+    }
+    .role {
+      font-weight: bold;
+    }
+  }
+}
+</style>
+
+<MainLayout>
+  <h1>Curriculum Vitae</h1>
+
+  <div class="block">
+    <h2>I am</h2>
+    <ul>
+      <li>Feel inspired building applications that work on web and mobile web.</li>
+      <li>Have an understanding of how to architect web applications.</li>
+      <li>Focused on problem solving and building great experiences for users.</li>
+      <li>A team player and have ability to work independently.</li>
+      <li>Love learning.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>My techs</h2>
+    I have deep expertise and want to work with:
+    <ul>
+      <li>HTML, CSS;</li>
+      <li>JavaScript, TypeScript;</li>
+      <li>Angular.</li>
+    </ul>
+
+    Also, it would be great to work with:
+    <ul>
+      <li>Custom Elements;</li>
+      <li>Wasm and Rust.</li>
+    </ul>
+
+    <h4>Timeline</h4>
+    This fancy table displays by year which core technologies I worked with and which are still active in my roster.
+    <TechTimeline />
+  </div>
+
+  <div class="block">
+    <h2>Experience</h2>
+    <table class="exp-table">
+      <tr>
+        <td>2020-</td>
+        <td>
+          <h3>Logsta</h3>
+          <span class="role">Angular developer.</span>
+          Customer application.
+        </td>
+      </tr>
+      <tr>
+        <td>2019-</td>
+        <td>
+          <h3>My Name is Travel</h3>
+          <span class="role">Fullstack developer.</span>
+          New website (not released yet).
+        </td>
+      </tr>
+      <tr>
+        <td>2017-2019</td>
+        <td>
+          <h3>Verizon Media</h3>
+          <span class="role">Angular developer.</span>
+          Internal AOL CRM.
+        </td>
+      </tr>
+      <tr>
+        <td>2016-2017</td>
+        <td>
+          <h3>Payever</h3>
+          <span class="role">Frontend Tech Lead.</span>
+          Customer application.
+        </td>
+      </tr>
+      <tr>
+        <td>2012-2015</td>
+        <td>
+          <h3>Taxer</h3>
+          <span class="role">Fullstack Developer &rarr; Tech Lead.</span>
+          The site and infrastructure.
+        </td>
+      </tr>
+      <tr>
+        <td>2006-</td>
+        <td>
+          <h3>Freelancer</h3>
+          Create sites and web apps.
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="block -final">
+    <a href="mailto:novyk@pm.me">novyk@pm.me</a>
+  </div>
+</MainLayout>

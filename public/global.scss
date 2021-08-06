@@ -1,11 +1,23 @@
+@import "./normalize.css";
+
 html {
-  background: #fef0c1 url("/assets/gr1.jpg") no-repeat center;
+  background: #FCE671 url("/assets/gr3.jpg") no-repeat center;
+  background-size: cover;
   font-family: 'Inter', 'system-ui', sans-serif;
-  font-size: 24px;
+  font-size: 16px;
+  min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 24px;
+  }
 }
 
 body {
   margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 a {

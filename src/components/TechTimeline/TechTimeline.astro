@@ -4,51 +4,49 @@ const techs = new Techs();
 ---
 
 <style lang="scss">
-  .timeline-wrapper {
-    overflow-x: auto;
-  }
+.current {
+  font-size: .65rem;
+}
 
-  .timeline {
-    margin-top: 4rem;
-    width: 100%;
-    .year {
-      font-weight: 700;
-      text-align: left;
+.timeline-wrapper {
+  margin-top: 1em;
+  overflow-x: auto;
+  border: 2px solid #000;
+  background: rgba(255 255 255 / .4);
+}
+
+.timeline {
+  width: 100%;
+  .year {
+    font-weight: 700;
+    text-align: left;
+  }
+  .tech {
+    background: #000000;
+    font-size: .8em;
+    padding: 0 .5em;
+    transition: all .1s;
+    a {
+      font-weight: 400;
+      color: inherit;
     }
-    .tech {
-      background: #000000;
-      font-size: .8rem;
-      padding: 0 .5rem;
-      transition: all .1s;
-      a {
-        font-weight: 400;
-        color: inherit;
-      }
-    }
-    td, th {
-      min-width: 4rem;
-    }
-    tbody tr {
-      background: var(--background);
-      transition: background .1s;
-      &:hover {
-        background: #e0e0db;
-        .tech {
-        }
+  }
+  td, th {
+    min-width: 4em;
+    border-radius: .2em;
+  }
+  tbody tr {
+    background: var(--background);
+    transition: background .1s;
+    &:hover {
+      background: #e0e0db;
+      .tech {
       }
     }
   }
+}
 </style>
 
-
-
-<p>
-  All main technologies that I've worked with in my web development career.
-</p>
-
-<p>
-  ⭐ — current priority tech.
-</p>
 
 <div class="timeline-wrapper">
   <table class="timeline">
@@ -66,17 +64,19 @@ const techs = new Techs();
       techs.timeline.map(tl =>
         <tr>
           {
-            tl.techs.map((t, index) => <>
-              { index === 0 && t.start > techs.starterYear && <td colspan={t.start - techs.starterYear}></td> }
-              <td
-                class="tech"
-                colspan={ (t.end ? t.end - t.start : techs.currentYear - t.start) + 1 }
-                style={ `background: ${t.background}; color: ${t.color || '#fff'};` }
-              >
-                { t.link ? <a href={ t.link }>{ t.title }</a> : <span>{ t.title }</span> }
-                { t.main && <span>⭐</span> }
-              </td>
-            </>)
+            tl.techs.map((t, index) => (
+              <div>
+                { index === 0 && t.start > techs.starterYear && <td colspan={t.start - techs.starterYear}></td> }
+                <td
+                  class="tech"
+                  colspan={ (t.end ? t.end - t.start : techs.currentYear - t.start) + 1 }
+                  style={ `background: ${t.background}; color: ${t.color || '#fff'};` }
+                >
+                  { t.link ? <a href={ t.link }>{ t.title }</a> : <span>{ t.title }</span> }
+                  { t.main && <span>⭐</span> }
+                </td>
+              </div>
+            ))
           }
         </tr>
       )
@@ -84,3 +84,7 @@ const techs = new Techs();
     </tbody>
   </table>
 </div>
+
+<p class="current">
+  ⭐ — current priority tech.
+</p>
