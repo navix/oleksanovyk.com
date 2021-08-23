@@ -152,7 +152,6 @@ export class Techs {
           start: 2020,
           background: '#dc3925',
           link: 'https://www.rust-lang.org/',
-          main: true,
         },
       ],
     },
