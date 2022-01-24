@@ -117,8 +117,15 @@ export class Techs {
         {
           title: 'Protractor E2E',
           start: 2020,
+          end: 2021,
           background: '#dd0031',
           link: 'https://www.protractortest.org/#/',
+        },
+        {
+          title: 'Playwright',
+          start: 2022,
+          background: '#45ba4b',
+          link: 'https://playwright.dev/',
         },
       ],
     },
