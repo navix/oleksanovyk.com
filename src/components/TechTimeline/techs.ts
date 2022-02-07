@@ -75,17 +75,6 @@ export class Techs {
     {
       techs: [
         {
-          title: 'jQuery',
-          start: 2008,
-          end: 2015,
-          background: '#0769ad',
-          link: 'https://jquery.com/',
-        },
-      ],
-    },
-    {
-      techs: [
-        {
           title: 'AngularJS',
           start: 2014,
           end: 2015,
@@ -126,39 +115,6 @@ export class Techs {
           start: 2022,
           background: '#45ba4b',
           link: 'https://playwright.dev/',
-        },
-      ],
-    },
-    {
-      techs: [
-        {
-          title: 'React',
-          start: 2019,
-          end: 2020,
-          background: '#61dafb',
-          color: '#111111',
-          link: 'https://reactjs.org/',
-        },
-      ],
-    },
-    {
-      techs: [
-        {
-          title: 'Next.js',
-          start: 2019,
-          end: 2020,
-          background: '#111111',
-          link: 'https://nextjs.org/',
-        },
-      ],
-    },
-    {
-      techs: [
-        {
-          title: '🦀Rust',
-          start: 2020,
-          background: '#dc3925',
-          link: 'https://www.rust-lang.org/',
         },
       ],
     },
@@ -206,28 +162,6 @@ export class Techs {
           start: 2020,
           background: '#202020',
           link: 'https://fastify.io/',
-        },
-      ],
-    },
-    {
-      techs: [
-        {
-          title: 'NestJS',
-          start: 2018,
-          end: 2020,
-          background: '#e0234e',
-          link: 'https://nestjs.com/',
-        },
-      ],
-    },
-    {
-      techs: [
-        {
-          title: 'GraphQL',
-          start: 2018,
-          end: 2020,
-          background: '#e10098',
-          link: 'https://graphql.org/',
         },
       ],
     },
