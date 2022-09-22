@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build"
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/renderer-lit": "^0.1.0",
-    "@astrojs/renderer-preact": "^0.2.0",
-    "astro": "^0.18.5"
+    "astro": "^1.2.8",
+    "sass": "^1.55.0"
   }
 }
