@@ -1,6 +1,7 @@
 ---
 import MainLayout from '../layout/MainLayout.astro';
 import TechTimeline from '../components/TechTimeline/TechTimeline.astro';
+import {config} from '../config.ts';
 ---
 
 <style lang="scss">
@@ -143,6 +144,6 @@ import TechTimeline from '../components/TechTimeline/TechTimeline.astro';
   </div>
 
   <div class="block -final">
-    <a href="mailto:oleksanovyk@gmail.com">oleksanovyk@gmail.com</a>
+    <a href={ 'mailto:' + config.email }>{ config.email }</a>
   </div>
 </MainLayout>
