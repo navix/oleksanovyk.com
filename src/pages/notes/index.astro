@@ -1,0 +1,12 @@
+---
+import MainLayout from '../../layout/MainLayout.astro';
+const posts = await Astro.glob('./**/*.md');
+const nonDraftPosts = posts.filter((post) => !post.frontmatter.draft);
+---
+
+<MainLayout title="Нотатки">
+  <h1>Нотатки</h1>
+  <ul>
+    {nonDraftPosts.map(post => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+  </ul>
+</MainLayout>

@@ -1,8 +1,12 @@
 ---
+import '../styles/global.scss';
+
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
-import '../styles/global.scss';
+
+const { title } = Astro.props;
+const preparedTitle = title ? title + ' | ' : '';
 ---
 <style lang="scss">
   .wrapper {
@@ -11,7 +15,7 @@ import '../styles/global.scss';
     margin: 0 auto;
     @media (min-width: 768px) {
       padding: 2rem;
-      max-width: 1000px;
+      max-width: 44rem;
     }
   }
 
@@ -22,7 +26,7 @@ import '../styles/global.scss';
 
 <html lang="en">
   <head>
-    <MainHead title="Oleksa Novyk: Web Developer 🐱‍💻" />
+    <MainHead title={ preparedTitle + 'Oleksa Novyk: Web Developer 🐱‍💻'} />
   </head>
   <body>
     <div class="wrapper">
