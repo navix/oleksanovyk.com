@@ -1,6 +1,6 @@
 export const config = {
   email: 'hey@oleksanovyk.com',
-  twitter: 'oleksanovyk',
+  bluesky: 'oleksanovyk.com',
   linkedin: 'onovyk',
   github: 'navix',
 }

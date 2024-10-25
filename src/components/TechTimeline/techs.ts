@@ -140,8 +140,16 @@ export class Techs {
         {
           title: 'Webpack',
           start: 2016,
+          end: 2022,
           background: '#1c78c0',
           link: 'https://webpack.js.org/',
+        },
+        {
+          title: 'ESBuild&Vite',
+          start: 2023,
+          background: '#ffcf00',
+          color: '#000000',
+          link: 'https://esbuild.github.io/',
         },
       ],
     },
@@ -150,13 +158,10 @@ export class Techs {
         {
           title: 'Express.js',
           start: 2012,
+          end: 2019,
           background: '#6c6c6c',
           link: 'https://expressjs.com/',
         },
-      ],
-    },
-    {
-      techs: [
         {
           title: 'Fastify',
           start: 2020,
@@ -170,6 +175,7 @@ export class Techs {
         {
           title: 'MySQL',
           start: 2007,
+          end: 2022,
           background: '#00758f',
           link: 'https://www.mysql.com/',
         },
